@@ -1,0 +1,168 @@
+<!DOCTYPE html><html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moja Firma</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }body {
+  background-color: #f0fff4;
+  color: #1a4731;
+}
+
+header {
+  background-color: #d4edda;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  color: #155724;
+}
+
+nav {
+  background-color: #c3e6cb;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: #155724;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+}
+
+.services, .pricing, .order, .contact {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services h2, .pricing h2, .order h2, .contact h2 {
+  margin-bottom: 1rem;
+  color: #155724;
+}
+
+.service, .price-item {
+  background-color: #e2f5e9;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+form {
+  background-color: #e2f5e9;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #28a745;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+footer {
+  background-color: #d4edda;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #155724;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Moja Zielona Firma</h1>
+  </header>  <nav>
+    <a href="#uslugi">Usługi</a>
+    <a href="#cennik">Cennik</a>
+    <a href="#zamowienie">Zamów online</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>  <section id="uslugi" class="services">
+    <h2>Nasze Usługi</h2>
+    <div class="service">
+      <h3>Usługa 1</h3>
+      <p>Opis pierwszej usługi oferowanej przez firmę.</p>
+    </div>
+    <div class="service">
+      <h3>Usługa 2</h3>
+      <p>Opis drugiej usługi oferowanej przez firmę.</p>
+    </div>
+  </section>  <section id="cennik" class="pricing">
+    <h2>Cennik</h2>
+    <div class="price-item">
+      <h3>Usługa 1</h3>
+      <p>200 zł</p>
+    </div>
+    <div class="price-item">
+      <h3>Usługa 2</h3>
+      <p>350 zł</p>
+    </div>
+  </section>  <section id="zamowienie" class="order">
+    <h2>Zamów online</h2>
+    <form action="#" method="post">
+      <label for="name">Imię i nazwisko:</label>
+      <input type="text" id="name" name="name" required /><label for="email">Adres e-mail:</label>
+  <input type="email" id="email" name="email" required />
+
+  <label for="service">Wybierz usługę:</label>
+  <select id="service" name="service">
+    <option value="usluga1">Usługa 1</option>
+    <option value="usluga2">Usługa 2</option>
+  </select>
+
+  <label for="details">Dodatkowe informacje:</label>
+  <textarea id="details" name="details" rows="4"></textarea>
+
+  <button type="submit">Zamów</button>
+</form>
+
+  </section>  <section id="kontakt" class="contact">
+    <h2>Kontakt</h2>
+    <p>Email: kontakt@mojafirma.pl</p>
+    <p>Telefon: 123 456 789</p>
+    <p>Adres: ul. Zielona 1, 00-000 Miasto</p>
+  </section>  <footer>
+    &copy; 2025 Moja Firma. Wszelkie prawa zastrzeżone.
+  </footer>
+</body>
+</html>
